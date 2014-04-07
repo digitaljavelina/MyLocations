@@ -69,7 +69,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     
-    NSLog(@"did fail with error %@", error);
+    // NSLog(@"did fail with error %@", error);
     
     if (error.code == kCLErrorLocationUnknown) {
         return;
@@ -85,7 +85,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
     CLLocation *newLocation = [locations lastObject];
-    NSLog(@"did update locations %@", newLocation);
+    // NSLog(@"did update locations %@", newLocation);
     
     if ([newLocation.timestamp timeIntervalSinceNow] < -5.0) {
         return;
@@ -106,7 +106,7 @@
         [self updateLabels];
         
         if (newLocation.horizontalAccuracy <= _locationManager.desiredAccuracy) {
-            NSLog(@"*** We're done!");
+            // NSLog(@"*** We're done!");
             [self stopLocationMananger];
             [self configureGetButton];
             
@@ -116,12 +116,12 @@
         }
     
     if (!_performingReverseGeocoding) {
-        NSLog(@"Going to Geocode");
+        // NSLog(@"Going to Geocode");
         
         _performingReverseGeocoding = YES;
         
         [_geocoder reverseGeocodeLocation:_location completionHandler:^(NSArray *placemarks, NSError *error) {
-            NSLog(@"***Found Placemarks: %@, error: %@", placemarks, error);
+            // NSLog(@"***Found Placemarks: %@, error: %@", placemarks, error);
             
             _lastGeocodingError = error;
             
@@ -141,7 +141,7 @@
     NSTimeInterval timeInterval = [newLocation.timestamp timeIntervalSinceDate:_location.timestamp];
     
     if (timeInterval > 10) {
-        NSLog(@"***Force Done!");
+        // NSLog(@"***Force Done!");
         [self stopLocationMananger];
         [self updateLabels];
         [self configureGetButton];
@@ -233,7 +233,7 @@
 
 - (void)didTimeOut:(id)obj {
     
-    NSLog(@"***Time Out");
+    // NSLog(@"***Time Out");
     
     if (_location == nil) {
         [self stopLocationMananger];

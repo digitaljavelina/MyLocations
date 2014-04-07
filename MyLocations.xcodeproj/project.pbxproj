@@ -23,6 +23,7 @@
 		99C8297718E7E78800FA4A2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C8297518E7E78800FA4A2D /* InfoPlist.strings */; };
 		99C8297918E7E78800FA4A2D /* MyLocationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C8297818E7E78800FA4A2D /* MyLocationsTests.m */; };
 		99C8298318E8969600FA4A2D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8298218E8969600FA4A2D /* CoreLocation.framework */; };
+		99DB792818F343D500E4936D /* LocationsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DB792718F343D500E4936D /* LocationsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		99C8297618E7E78800FA4A2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99C8297818E7E78800FA4A2D /* MyLocationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationsTests.m; sourceTree = "<group>"; };
 		99C8298218E8969600FA4A2D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		99DB792618F343D500E4936D /* LocationsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsDetailViewController.h; sourceTree = "<group>"; };
+		99DB792718F343D500E4936D /* LocationsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				99C8295918E7E78700FA4A2D /* AppDelegate.h */,
 				99C8295A18E7E78700FA4A2D /* AppDelegate.m */,
 				99C8295C18E7E78700FA4A2D /* Main.storyboard */,
+				99DB792618F343D500E4936D /* LocationsDetailViewController.h */,
+				99DB792718F343D500E4936D /* LocationsDetailViewController.m */,
 				99C8295F18E7E78700FA4A2D /* CurrentLocationViewController.h */,
 				99C8296018E7E78700FA4A2D /* CurrentLocationViewController.m */,
 				99C8296218E7E78700FA4A2D /* SecondViewController.h */,
@@ -208,6 +213,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Digital Javelina, LLC";
 				TargetAttributes = {
+					99C8294618E7E78700FA4A2D = {
+						DevelopmentTeam = YHWHU4634V;
+					};
 					99C8296A18E7E78800FA4A2D = {
 						TestTargetID = 99C8294618E7E78700FA4A2D;
 					};
@@ -261,6 +269,7 @@
 				99C8296418E7E78700FA4A2D /* SecondViewController.m in Sources */,
 				99C8295B18E7E78700FA4A2D /* AppDelegate.m in Sources */,
 				99C8296118E7E78700FA4A2D /* CurrentLocationViewController.m in Sources */,
+				99DB792818F343D500E4936D /* LocationsDetailViewController.m in Sources */,
 				99C8295718E7E78700FA4A2D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,9 +395,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,9 +410,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +479,7 @@
 				99C8297E18E7E78800FA4A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99C8297F18E7E78800FA4A2D /* Build configuration list for PBXNativeTarget "MyLocationsTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +488,7 @@
 				99C8298118E7E78800FA4A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

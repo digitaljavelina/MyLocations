@@ -83,6 +83,45 @@
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
+        <!--Table View Controller - Tag Location-->
+        <scene sceneID="d9P-1q-2eB">
+            <objects>
+                <tableViewController id="tNZ-Ut-KYQ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ntz-yI-ae1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="tNZ-Ut-KYQ" id="Nqa-BD-pML"/>
+                            <outlet property="delegate" destination="tNZ-Ut-KYQ" id="pRz-dc-VDq"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Tag Location" id="NAi-Ik-u9U">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xy6-2H-pQn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="i1r-Mv-xiB"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYK-dh-Wzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="-134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ime-iA-BS6">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="oks-Vv-PFX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kBw-zn-Sli">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tNZ-Ut-KYQ" kind="relationship" relationship="rootViewController" id="ZDb-OX-QZn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJd-KN-9Bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-134"/>
+        </scene>
         <!--Second View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
