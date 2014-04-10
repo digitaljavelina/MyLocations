@@ -1,14 +1,14 @@
 //
-//  LocationsDetailViewController.m
+//  LocationDetailsViewController.m
 //  MyLocations
 //
 //  Created by Michael Henry on 4/7/14.
 //  Copyright (c) 2014 Digital Javelina, LLC. All rights reserved.
 //
 
-#import "LocationsDetailViewController.h"
+#import "LocationDetailsViewController.h"
 
-@interface LocationsDetailViewController ()
+@interface LocationDetailsViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
 @property (nonatomic, weak) IBOutlet UILabel *categoryLabel;
@@ -19,14 +19,23 @@
 
 @end
 
-@implementation LocationsDetailViewController
+@implementation LocationDetailsViewController
 
 - (IBAction)done:(id)sender {
+    
+    [self closeScreen];
     
 }
 
 - (IBAction)cancel:(id)sender {
     
+    [self closeScreen];
+    
+}
+
+- (void)closeScreen {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
