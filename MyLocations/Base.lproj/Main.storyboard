@@ -56,7 +56,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wNz-sL-oP3" kind="modal" id="Hqg-V8-guO"/>
+                                    <segue destination="wNz-sL-oP3" kind="modal" identifier="TagLocation" id="Hqg-V8-guO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kbA-P0-ltl">
@@ -89,7 +89,7 @@
         <!--Location Details View Controller - Tag Location-->
         <scene sceneID="7T6-m7-gdq">
             <objects>
-                <tableViewController id="JuK-hO-y69" customClass="LocationDetailsViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TagLocation" id="JuK-hO-y69" customClass="LocationDetailsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JOA-OV-x3E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,9 @@
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="JuK-hO-y69" id="tgC-Uy-lYc"/>
+                                                    </connections>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -341,7 +344,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Jhm-Y3-nEA">
             <objects>
-                <navigationController storyboardIdentifier="TagLocation" automaticallyAdjustsScrollViewInsets="NO" id="wNz-sL-oP3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wNz-sL-oP3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A8K-A0-MHb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

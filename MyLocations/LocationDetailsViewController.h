@@ -1,5 +1,5 @@
 //
-//  LocationsDetailViewController.h
+//  LocationDetailsViewController.h
 //  MyLocations
 //
 //  Created by Michael Henry on 4/7/14.
@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LocationDetailsViewController : UITableViewController
+
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, strong) CLPlacemark *placemark;
 
 @end
