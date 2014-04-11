@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9932E47E18F75EAF00C2CC2B /* CategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E47D18F75EAF00C2CC2B /* CategoryPickerViewController.m */; };
 		99C8294B18E7E78700FA4A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8294A18E7E78700FA4A2D /* Foundation.framework */; };
 		99C8294D18E7E78700FA4A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8294C18E7E78700FA4A2D /* CoreGraphics.framework */; };
 		99C8294F18E7E78700FA4A2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8294E18E7E78700FA4A2D /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9932E47C18F75EAF00C2CC2B /* CategoryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPickerViewController.h; sourceTree = "<group>"; };
+		9932E47D18F75EAF00C2CC2B /* CategoryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPickerViewController.m; sourceTree = "<group>"; };
 		99C8294718E7E78700FA4A2D /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C8294A18E7E78700FA4A2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99C8294C18E7E78700FA4A2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 				99C8295C18E7E78700FA4A2D /* Main.storyboard */,
 				99DB792618F343D500E4936D /* LocationDetailsViewController.h */,
 				99DB792718F343D500E4936D /* LocationDetailsViewController.m */,
+				9932E47C18F75EAF00C2CC2B /* CategoryPickerViewController.h */,
+				9932E47D18F75EAF00C2CC2B /* CategoryPickerViewController.m */,
 				99C8295F18E7E78700FA4A2D /* CurrentLocationViewController.h */,
 				99C8296018E7E78700FA4A2D /* CurrentLocationViewController.m */,
 				99C8296218E7E78700FA4A2D /* SecondViewController.h */,
@@ -270,6 +275,7 @@
 				99C8295B18E7E78700FA4A2D /* AppDelegate.m in Sources */,
 				99C8296118E7E78700FA4A2D /* CurrentLocationViewController.m in Sources */,
 				99DB792818F343D500E4936D /* LocationDetailsViewController.m in Sources */,
+				9932E47E18F75EAF00C2CC2B /* CategoryPickerViewController.m in Sources */,
 				99C8295718E7E78700FA4A2D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
