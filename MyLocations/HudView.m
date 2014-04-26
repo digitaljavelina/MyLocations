@@ -19,6 +19,8 @@
     view.userInteractionEnabled = NO;
     
     [hudView showAnimated:animated];
+    
+    
     return hudView;
 }
 

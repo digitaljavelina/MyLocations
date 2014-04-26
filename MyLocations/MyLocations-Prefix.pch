@@ -15,4 +15,13 @@
     #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreData/CoreData.h>
+
+extern NSString *const ManagedObjectContextDidReceiveFailNotification;
+
+#define FATAL_CORE_DATA_ERROR(_error_)\
+NSLog(@"*** Fatal error in %s:%d\n%@\n%@",\
+__FILE__, __LINE__, error, [error userInfo];\
+[[NSNotificationCenter defaultCenter] postNotificationName:\
+ManagedObjectContextSaveDidFailNotification object:error];
+
 #endif
