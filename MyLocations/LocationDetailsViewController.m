@@ -44,6 +44,10 @@
     
     [super viewDidLoad];
     
+    if (self.locationToEdit != nil) {
+        self.title = @"Edit Location";
+    }
+    
     self.descriptionTextView.text = _descriptionText;
     self.categoryLabel.text = _categoryName;
     self.latitudeLabel.text = [NSString stringWithFormat:@"%.8f", self.coordinate.latitude];
@@ -78,6 +82,22 @@
 - (NSString *)stringFromPlacemark:(CLPlacemark *)placemark {
     
     return [NSString stringWithFormat:@"%@ %@, %@, %@ %@, %@", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea, placemark.postalCode, placemark.country];
+}
+
+- (void)setLocationToEdit:(Location *)newLocationToEdit {
+    
+    if (_locationToEdit != newLocationToEdit) {
+        _locationToEdit = newLocationToEdit;
+        
+        _descriptionText = _locationToEdit.locationDescription;
+        _categoryName = _locationToEdit.category;
+        _date = _locationToEdit.date;
+        
+        self.coordinate = CLLocationCoordinate2DMake([_locationToEdit.latitude doubleValue], [_locationToEdit.longitude doubleValue]);
+        
+        self.placemark = _locationToEdit.placemark;
+    }
+    
 }
 
 - (NSString *)formatDate:(NSDate *)theDate {
