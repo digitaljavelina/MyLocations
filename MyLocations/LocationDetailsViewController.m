@@ -115,13 +115,16 @@
 - (IBAction)done:(id)sender {
     
     HudView *hudView = [HudView hudInView:self.navigationController.view animated:YES];
-    hudView.text = @"Tagged";
+   
     
-    // 1
-    
-    Location *location = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:self.managedObjectContext];
-    
-    // 2
+    Location *location = nil;
+    if (self.locationToEdit != nil) {
+        hudView.text = @"Updated";
+        location = self.locationToEdit;
+    } else {
+        hudView.text = @"Tagged";
+        location = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:self.managedObjectContext];
+    }
     
     location.locationDescription = _descriptionText;
     location.category = _categoryName;
