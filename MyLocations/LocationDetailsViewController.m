@@ -210,9 +210,9 @@
 
 #pragma mark - UITextViewDelegate
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+- (BOOL)textView:(UITextView *)theTextView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     
-    _descriptionText = [textView.text stringByReplacingCharactersInRange:range withString:text];
+    _descriptionText = [theTextView.text stringByReplacingCharactersInRange:range withString:text];
     
     return YES;
 }

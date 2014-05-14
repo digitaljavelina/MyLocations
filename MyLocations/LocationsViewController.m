@@ -90,7 +90,7 @@
     Location *location = _locations[indexPath.row];
     
     if ([location.locationDescription length] > 0) {
-        locationCell.descriptionLabel.text = location.description;
+        locationCell.descriptionLabel.text = location.locationDescription;
     } else {
         locationCell.descriptionLabel.text = @"(No Description";
     }
