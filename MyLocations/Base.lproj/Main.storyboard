@@ -161,6 +161,10 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qpz-VG-4zN">
+                                                    <rect key="frame" x="123" y="10" width="144" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -288,8 +292,10 @@
                         <outlet property="categoryLabel" destination="mbS-rn-CNA" id="0wr-Bd-Nhe"/>
                         <outlet property="dateLabel" destination="mmU-ZG-PUH" id="Jhz-Y4-cvI"/>
                         <outlet property="descriptionTextView" destination="LgH-20-52N" id="G0w-Yf-tQY"/>
+                        <outlet property="imageView" destination="qpz-VG-4zN" id="A4E-D3-v0f"/>
                         <outlet property="latitudeLabel" destination="Sbb-Xt-xQX" id="HxT-5n-AQh"/>
                         <outlet property="longitudeLabel" destination="9jx-JY-B3C" id="E8Y-gC-deV"/>
+                        <outlet property="photoLabel" destination="Fxg-rQ-w3b" id="4N1-0s-bQm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="966-e6-4Ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
