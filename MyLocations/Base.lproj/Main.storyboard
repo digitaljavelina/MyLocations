@@ -167,6 +167,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessoryView" destination="qpz-VG-4zN" id="qBR-S8-5ra"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -319,24 +322,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L24-X9-8NQ">
-                                            <rect key="frame" x="20" y="6" width="280" height="21"/>
+                                            <rect key="frame" x="82" y="6" width="280" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ytt-wu-Bmn">
-                                            <rect key="frame" x="20" y="30" width="280" height="21"/>
+                                            <rect key="frame" x="82" y="30" width="280" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NCH-w9-6N1">
+                                            <rect key="frame" x="15" y="2" width="52" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="ytt-wu-Bmn" id="3Bm-Qp-7Qk"/>
                                     <outlet property="descriptionLabel" destination="L24-X9-8NQ" id="p20-RE-gwE"/>
+                                    <outlet property="photoImageView" destination="NCH-w9-6N1" id="ufa-yQ-did"/>
                                     <segue destination="wNz-sL-oP3" kind="modal" identifier="EditLocation" id="A76-N0-4Hm"/>
                                 </connections>
                             </tableViewCell>
@@ -507,6 +515,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="I9R-bt-odR"/>
+        <segue reference="A76-N0-4Hm"/>
     </inferredMetricsTieBreakers>
 </document>

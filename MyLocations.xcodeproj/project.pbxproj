@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990DC8FB1929BA18001D8A19 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 990DC8FA1929BA18001D8A19 /* UIImage+Resize.m */; };
 		991EA2211909FD1F001D5C43 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 991EA2201909FD1F001D5C43 /* Location.m */; };
 		9932E47E18F75EAF00C2CC2B /* CategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E47D18F75EAF00C2CC2B /* CategoryPickerViewController.m */; };
 		9963452918FB5590009D9CBC /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9963452818FB5590009D9CBC /* HudView.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		990DC8F91929BA18001D8A19 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		990DC8FA1929BA18001D8A19 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		991EA21F1909FD1F001D5C43 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		991EA2201909FD1F001D5C43 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		9932E47C18F75EAF00C2CC2B /* CategoryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPickerViewController.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				99E4F949190C9053007CBF55 /* LocationsViewController.m */,
 				99F4E5AA19255871003D0BC8 /* MapViewController.h */,
 				99F4E5AB19255871003D0BC8 /* MapViewController.m */,
+				990DC8F91929BA18001D8A19 /* UIImage+Resize.h */,
+				990DC8FA1929BA18001D8A19 /* UIImage+Resize.m */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				9963452918FB5590009D9CBC /* HudView.m in Sources */,
 				99E4F94A190C9053007CBF55 /* LocationsViewController.m in Sources */,
 				9932E47E18F75EAF00C2CC2B /* CategoryPickerViewController.m in Sources */,
+				990DC8FB1929BA18001D8A19 /* UIImage+Resize.m in Sources */,
 				99D4E8AA1910ABD00051183B /* LocationCell.m in Sources */,
 				99C8295718E7E78700FA4A2D /* main.m in Sources */,
 			);

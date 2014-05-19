@@ -10,6 +10,7 @@
 #import "Location.h"
 #import "LocationCell.h"
 #import "LocationDetailsViewController.h"
+#import "UIImage+Resize.h"
 
 
 @interface LocationsViewController () <NSFetchedResultsControllerDelegate>
@@ -112,7 +113,7 @@
     if ([location.locationDescription length] > 0) {
         locationCell.descriptionLabel.text = location.locationDescription;
     } else {
-        locationCell.descriptionLabel.text = @"(No Description";
+        locationCell.descriptionLabel.text = @"(No Description)";
     }
     
     if (location.placemark != nil) {
@@ -125,6 +126,18 @@
                                           [location.latitude doubleValue],
                                           [location.longitude doubleValue]];
     }
+    
+    UIImage *image = nil;
+    if ([location hasPhoto]) {
+        image = [location photoImage];
+        
+        if (image != nil) {
+            image = [image resizedImageWithBounds:CGSizeMake(52, 52)];
+        }
+        
+    }
+    
+    locationCell.photoImageView.image = image;
 }
 
 - (void)dealloc {
@@ -198,6 +211,8 @@
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         Location *location = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        
+        [location removePhotoFile];
         [self.managedObjectContext deleteObject:location];
         
         NSError *error;
