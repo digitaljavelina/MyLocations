@@ -27,6 +27,8 @@ NSString *const ManagedObjectContextSaveDidFailNotification = @"ManagedObjectCon
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
+    [self customizeAppearance];
+    
     CurrentLocationViewController *currentLocationViewController = (CurrentLocationViewController *)tabBarController.viewControllers[0];
     
     currentLocationViewController.managedObjectContext = self.managedObjectContext;
@@ -42,7 +44,18 @@ NSString *const ManagedObjectContextSaveDidFailNotification = @"ManagedObjectCon
     MapViewController *mapViewController = (MapViewController *)tabBarController.viewControllers[2];
     mapViewController.managedObjectContext = self.managedObjectContext;
     
+    
     return YES;
+    
+}
+
+- (void)customizeAppearance {
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],}];
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
 }
 							
